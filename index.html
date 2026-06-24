@@ -13,41 +13,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
-<meta name="description" content="A Vetec oferece soluções premium em usinagem de precisão, caldeiraria e montagem industrial em Catalão, GO. Reduza o tempo de máquina parada da sua indústria.">
-<meta name="keywords" content="usinagem catalão, caldeiraria industrial, manutenção mecânica, montagem industrial goiás, peças industriais, vetec">
-<meta name="author" content="Seu Nome ou Nome da Sua Agência">
+    <meta name="description" content="A Vetec oferece soluções premium em usinagem de precisão, caldeiraria e montagem industrial em Catalão, GO. Reduza o tempo de máquina parada da sua indústria.">
+    <meta name="keywords" content="usinagem catalão, caldeiraria industrial, manutenção mecânica, montagem industrial goiás, peças industriais, vetec">
+    <meta name="author" content="Vetec Service Mecânica">
 
-<meta property="og:title" content="Vetec - Engenharia e Manutenção Industrial">
-<meta property="og:description" content="Soluções definitivas em usinagem e caldeiraria para o setor industrial.">
-<meta property="og:image" content="https://vetecind.com.br/img/sua-imagem-de-capa.jpg">
-<meta property="og:url" content="https://vetecind.com.br">
+    <meta property="og:title" content="Vetec - Engenharia e Manutenção Industrial">
+    <meta property="og:description" content="Soluções definitivas em usinagem e caldeiraria para o setor industrial.">
+    <meta property="og:image" content="https://vetecind.com.br/img/sua-imagem-de-capa.jpg">
+    <meta property="og:url" content="https://vetecind.com.br">
+
+    <!-- JSON-LD para SEO Avançado -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Vetec Service Mecânica",
+        "description": "Soluções em usinagem de precisão, caldeiraria e montagem industrial em Catalão, GO.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Catalão",
+            "addressRegion": "GO",
+            "addressCountry": "BR"
+        },
+        "telephone": "+5564999999999",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "sameAs": [
+            "https://www.instagram.com/vetecind/"
+        ]
+    }
+    </script>
 
 </head>
 <body>
 
-   <header>
-        <div class="container header-container">
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
+    <!-- ALTERNADOR DE TEMAS (AZUL / LARANJA) -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fa-solid fa-moon"></i>
+        <span class="theme-label">Azul</span>
+    </button>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
             <a href="#" class="logo">
                 VETEC<span>.</span>
             </a>
-
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre a VETEC</a></li>
+                    <li><a href="#sobre">A Empresa</a></li>
                     <li><a href="#servicos">Especialidades</a></li>
-                    <li><a href="#metricas">Métricas</a></li>
+                    <li><a href="#metricas">Capacidade</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#instagram-feed">Mídia Social</a></li>
                     <li><a href="#contato" class="btn-nav">Fale Conosco</a></li>
                 </ul>
             </nav>
-            
             <div class="menu-toggle" id="mobile-menu">
-                    <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
 
+    <!-- HERO -->
     <section id="home" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
@@ -60,6 +94,7 @@
         </div>
     </section>
 
+    <!-- SOBRE -->
     <section id="sobre" class="section">
         <div class="container">
             <div class="two-column">
@@ -74,6 +109,16 @@
                         <li><i class="fa-solid fa-check"></i> Prazos Rigorosamente Cumpridos</li>
                         <li><i class="fa-solid fa-check"></i> Foco Total em Segurança do Trabalho</li>
                     </ul>
+
+                    <!-- Certificados -->
+                    <div class="certificados">
+                        <img src="img/iso9001.png" alt="ISO 9001" onerror="this.style.display='none'">
+                        <img src="img/nr12.png" alt="NR 12" onerror="this.style.display='none'">
+                        <img src="img/selo-qualidade.png" alt="Selo de Qualidade" onerror="this.style.display='none'">
+                        <span class="cert-placeholder"><i class="fa-solid fa-certificate"></i> ISO 9001</span>
+                        <span class="cert-placeholder"><i class="fa-solid fa-shield-halved"></i> NR 12</span>
+                        <span class="cert-placeholder"><i class="fa-solid fa-medal"></i> Qualidade</span>
+                    </div>
                 </div>
                 <div class="about-image">
                     <img src="img/empresa.jpg" alt="Instalações Vetec - Manutenção Industrial">
@@ -83,6 +128,7 @@
         </div>
     </section>
 
+    <!-- SERVIÇOS -->
     <section id="servicos" class="section bg-light">
         <div class="container">
             <div class="section-header center">
@@ -101,7 +147,7 @@
                         <p>Fabricação e recuperação de peças industriais complexas, eixos e engrenagens com maquinário de alta precisão.</p>
                     </div>
                 </div>
-                
+
                 <div class="card-produto">
                     <div class="img-container">
                         <img src="img/caldeiraria.jpg" alt="Caldeiraria Industrial">
@@ -125,6 +171,7 @@
         </div>
     </section>
 
+    <!-- MÉTRICAS -->
     <section id="metricas" class="section bg-primary text-white">
         <div class="container">
             <div class="grid-numbers">
@@ -144,9 +191,9 @@
         </div>
     </section>
 
-<div class="parceiros-faixa">
+    <!-- PARCEIROS -->
+    <div class="parceiros-faixa">
         <div class="parceiros-track">
-            
             <div class="parceiros-slide">
                 <div class="parceiro-logo"><i class="fa-solid fa-industry"></i> Indústria Alpha</div>
                 <div class="parceiro-logo"><i class="fa-solid fa-tractor"></i> AgroTech GO</div>
@@ -154,7 +201,6 @@
                 <div class="parceiro-logo"><i class="fa-solid fa-box"></i> Logística DIMIC</div>
                 <div class="parceiro-logo"><i class="fa-solid fa-bolt"></i> EletroTécnica</div>
             </div>
-            
             <div class="parceiros-slide">
                 <div class="parceiro-logo"><i class="fa-solid fa-industry"></i> Indústria Alpha</div>
                 <div class="parceiro-logo"><i class="fa-solid fa-tractor"></i> AgroTech GO</div>
@@ -162,11 +208,76 @@
                 <div class="parceiro-logo"><i class="fa-solid fa-box"></i> Logística DIMIC</div>
                 <div class="parceiro-logo"><i class="fa-solid fa-bolt"></i> EletroTécnica</div>
             </div>
-            
         </div>
     </div>
 
-    <section id="contato" class="section">
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="section bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <span class="tag">O que Dizem</span>
+                <h2>Depoimentos de Clientes</h2>
+                <div class="line center-line"></div>
+            </div>
+            <div class="grid-depoimentos">
+                <div class="depoimento-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"A Vetec reduziu nosso tempo de máquina parada em 40%. Equipe técnica excepcional e suporte rápido."</p>
+                    <h4>— João Silva, Indústria Alpha</h4>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="depoimento-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Os serviços de caldeiraria da Vetec são impecáveis. Entregaram antes do prazo e com qualidade superior."</p>
+                    <h4>— Maria Oliveira, AgroTech GO</h4>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="depoimento-card">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Parceiros estratégicos. A Vetec entende nossas necessidades e sempre entrega soluções técnicas eficientes."</p>
+                    <h4>— Carlos Mendes, CMOC</h4>
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM FEED -->
+    <section id="instagram-feed" class="section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="tag">Mídia Social</span>
+                <h2>Vetec em Campo</h2>
+                <div class="line center-line"></div>
+            </div>
+
+            <div class="grid-instagram">
+                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
+                    <img src="img/insta1.jpg" alt="Projeto Usinagem Vetec">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
+                    <img src="img/insta2.jpg" alt="Manutenção Industrial Vetec">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
+                    <img src="img/insta3.jpg" alt="Caldeiraria Vetec">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
+                    <img src="img/insta4.jpg" alt="Montagem Industrial Vetec">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+            </div>
+
+            <div class="center" style="margin-top: 40px;">
+                <a href="https://www.instagram.com/vetecind/" target="_blank" class="btn">Acompanhar no Instagram <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section bg-light">
         <div class="container">
             <div class="two-column">
                 <div class="contact-info">
@@ -174,24 +285,35 @@
                     <h2>Fale com a Nossa Engenharia</h2>
                     <div class="line"></div>
                     <p>Precisa de um orçamento para usinagem, caldeiraria ou tem uma parada de manutenção programada? Entre em contato agora.</p>
-                    
+
                     <div class="info-item">
                         <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
                         <div>
                             <h4>Telefone</h4>
-                            <span>(64) 99999-9999</span> </div>
+                            <span>(64) 99999-9999</span>
+                        </div>
                     </div>
                     <div class="info-item">
                         <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                         <div>
                             <h4>E-mail</h4>
-                            <span>comercial@vetecind.com.br</span> </div>
+                            <span>comercial@vetecind.com.br</span>
+                        </div>
                     </div>
                     <div class="info-item">
                         <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
                             <h4>Endereço</h4>
                             <span>Catalão, GO</span>
+                        </div>
+                    </div>
+
+                    <!-- Horário de Funcionamento -->
+                    <div class="info-item horario">
+                        <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <span>Segunda a Sexta: 08:00 - 18:00</span>
                         </div>
                     </div>
                 </div>
@@ -215,39 +337,7 @@
         </div>
     </section>
 
-    <section id="instagram-feed" class="section bg-light">
-        <div class="container">
-            <div class="section-header center">
-                <span class="tag">Mídia Social</span>
-                <h2>Vetec em Campo</h2>
-                <div class="line center-line"></div>
-            </div>
-            
-            <div class="grid-instagram">
-                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
-                    <img src="img/insta1.jpg" alt="Projeto Usinagem Vetec">
-                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
-                </a>
-                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
-                    <img src="img/insta2.jpg" alt="Manutenção Industrial Vetec">
-                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
-                </a>
-                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
-                    <img src="img/insta3.jpg" alt="Caldeiraria Vetec">
-                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
-                </a>
-                <a href="https://www.instagram.com/vetecind/" target="_blank" class="insta-item">
-                    <img src="img/insta4.jpg" alt="Montagem Industrial Vetec">
-                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
-                </a>
-            </div>
-            
-            <div class="center" style="margin-top: 40px;">
-                <a href="https://www.instagram.com/vetecind/" target="_blank" class="btn">Acompanhar no Instagram <i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
-
+    <!-- RODAPÉ -->
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">VETEC<span>.</span></div>
@@ -257,11 +347,22 @@
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
+        <div class="container footer-bottom">
+            <a href="#privacidade">Política de Privacidade</a>
+            <span>|</span>
+            <a href="#termos">Termos de Uso</a>
+        </div>
     </footer>
 
+    <!-- WHATSAPP FLOAT -->
     <a href="https://wa.me/5564999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20técnico%20com%20a%20Vetec." target="_blank" class="whatsapp-float" aria-label="Contato via WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
